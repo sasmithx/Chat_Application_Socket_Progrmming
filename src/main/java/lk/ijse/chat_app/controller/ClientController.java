@@ -420,12 +420,28 @@ public class ClientController implements Initializable {
 
 
     @FXML
-    void sendOnAction(MouseEvent event) {
+    void sendOnAction(MouseEvent event) throws IOException {
+        if(!sendText.getText().isEmpty()){String msg = lblName.getText();
+            String name = lblName.getText();
+            Text text = new Text("\nME : "+msg);
+            text.setTextAlignment(TextAlignment.CENTER);
+            text.setStyle("-fx-fill: white;");
+            TextFlow textFlow = new TextFlow();
+            textFlow.getChildren().add(text);
+            textFlow.setStyle("-fx-background-color:  #005C4B; -fx-background-radius: 10 10 0 10; -fx-font-style: white;");
+            textFlow.setPadding(new Insets(2,10,2,10));
 
-    }
+            HBox vBox = new HBox(10);
+            vBox.setAlignment(Pos.BOTTOM_RIGHT);
+            vBox.getChildren().add(textFlow);
 
-    @FXML
-    void txtValiName(KeyEvent event) {
+            imageBox.getChildren().add(vBox);
+
+            dataOutputStream.writeUTF(name);
+            dataOutputStream.writeUTF(msg);
+            dataOutputStream.flush();
+            sendText.setText("");
+        }
 
     }
 
@@ -452,6 +468,19 @@ public class ClientController implements Initializable {
             }
         });
         thread.start();
+    }
+
+    @FXML
+    void txtValiName(KeyEvent event) {
+        String name = userTxt.getText();
+        boolean isValidate = validation(name);
+
+        if(isValidate) {
+            userTxt.setStyle("-fx-border-color: green");
+
+        }else{
+            userTxt.setStyle("-fx-border-color: red");
+        }
     }
 
 
