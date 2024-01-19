@@ -1,14 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="lk.ijse.chat_app.controller.ClientController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="446.0" prefWidth="687.0" style="-fx-background-color: #202C33;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chat_app.controller.ClientController">
+    <children>
+        <ImageView fitHeight="446.0" fitWidth="687.0">
+            <image>
+                <Image url="@../assests/background.jpg" />
+            </image>
+        </ImageView>
+        <AnchorPane fx:id="msgPane" layoutX="51.0" layoutY="22.0" visible="false">
+            <children>
+                <Label fx:id="lblName" layoutX="95.0" prefHeight="41.0" prefWidth="347.0" text="Label" textFill="WHITE">
+                    <font>
+                        <Font size="29.0" />
+                    </font></Label>
+                <TextField fx:id="sendText" layoutX="99.0" layoutY="370.0" prefHeight="24.0" prefWidth="400.0" style="-fx-background-radius: 10 10 10 10;" />
+                <ScrollPane layoutY="41.0" prefHeight="286.0" prefWidth="614.0" style="-fx-background-color: #202C33;">
+                    <content>
+                        <VBox fx:id="imageBox" prefHeight="284.0" prefWidth="612.0" style="-fx-background-color: #202C33;" />
+                    </content>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </ScrollPane>
+                <ImageView fitHeight="24.0" fitWidth="35.0" layoutX="453.0" layoutY="370.0" onMouseClicked="#imageOnAction" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assests/compact-camera-50.png" />
+                    </image>
+                </ImageView>
+                <!--            <ImageView fitHeight="41.0" fitWidth="51.0" layoutX="42.0" layoutY="362.0" onMouseClicked="#emojiSend" pickOnBounds="true" preserveRatio="true">-->
+                <!--               <image>-->
+                <!--                  <Image url="/lk/ijse/chatting_app/view/icons8-grinning-face-with-big-eyes-48.png" />-->
+                <!--               </image>-->
+                <!--            </ImageView>-->
+                <ScrollPane fx:id="pane" layoutX="7.0" layoutY="276.0" prefHeight="88.0" prefWidth="154.0" visible="false">
+                    <content>
+                        <VBox fx:id="emojiBox" prefHeight="86.0" prefWidth="152.0" style="-fx-background-color: lime green;" />
+                    </content>
+                </ScrollPane>
+                <ImageView fitHeight="35.0" fitWidth="34.0" layoutX="52.0" layoutY="365.0" onMouseClicked="#emojiSend" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assests/grinning-face-with-big-eyes-48.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="41.0" fitWidth="50.0" layoutX="531.0" layoutY="355.0" onMouseClicked="#sendOnAction" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assests/telegram-app-50.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="41.0" fitWidth="72.0" layoutX="39.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assests/user-48.png" />
+                    </image></ImageView>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="logPane" layoutX="157.0" layoutY="265.0" prefHeight="96.0" prefWidth="374.0">
+            <children>
+                <TextField fx:id="userTxt" layoutX="9.0" layoutY="1.0" onKeyTyped="#txtValiName" prefHeight="24.0" prefWidth="356.0" style="-fx-background-radius: 10 10 10 10;" />
+            <JFXButton layoutX="125.0" layoutY="55.0" onAction="#loginOnAction" prefHeight="34.0" prefWidth="124.0" style="-fx-background-color: #ff7675; -fx-background-radius: 10;" text="Join" />
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="imgPane" layoutX="250.0" layoutY="70.0">
+            <children>
+                <ImageView fitHeight="192.0" fitWidth="198.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assests/man.png" />
+                    </image></ImageView>
+            </children>
+        </AnchorPane>
+        <Label fx:id="labelTime" layoutX="451.0" layoutY="12.0" prefHeight="17.0" prefWidth="201.0" text="            Label" textAlignment="CENTER" />
+        <Label fx:id="labelTime1" layoutX="462.0" layoutY="37.0" prefHeight="17.0" prefWidth="201.0" text="            Label" textAlignment="CENTER" />
+    </children>
 </AnchorPane>
