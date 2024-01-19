@@ -33,7 +33,7 @@
                         <DropShadow />
                     </effect>
                 </ScrollPane>
-                <ImageView fitHeight="24.0" fitWidth="35.0" layoutX="453.0" layoutY="370.0" onMouseClicked="#imageOnAction" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="24.0" fitWidth="35.0" layoutX="466.0" layoutY="371.0" onMouseClicked="#imageOnAction" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@../assests/compact-camera-50.png" />
                     </image>
