@@ -9,12 +9,9 @@ import java.util.ArrayList;
 
 public class ServerInitializer {
     private static ArrayList<ServerController> clients = new ArrayList<>();
-
     private static Socket socket;
-
     public static void main(String[] args) {
         System.out.println("Hello" + clients);
-
         try {
             ServerSocket serverSocket = new ServerSocket(5003);
             while(true){
@@ -32,5 +29,4 @@ public class ServerInitializer {
             e.printStackTrace();
         }
     }
-
 }

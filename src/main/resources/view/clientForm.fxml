@@ -52,14 +52,14 @@
                     <image>
                         <Image url="@../assests/grinning-face-with-big-eyes-48.png" />
                     </image></ImageView>
-                <ImageView fitHeight="41.0" fitWidth="50.0" layoutX="531.0" layoutY="355.0" onMouseClicked="#sendOnAction" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="41.0" fitWidth="50.0" layoutX="506.0" layoutY="362.0" onMouseClicked="#sendOnAction" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../assests/telegram-app-50.png" />
+                        <Image url="@../assests/Telegram-Orange-Icon.png" />
                     </image>
                 </ImageView>
                 <ImageView fitHeight="41.0" fitWidth="72.0" layoutX="39.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../assests/user-48.png" />
+                        <Image url="@../assests/man_4140048.png" />
                     </image></ImageView>
             </children>
         </AnchorPane>
@@ -84,9 +84,9 @@
         </AnchorPane>
         <Label fx:id="labelTime" layoutX="525.0" layoutY="13.0" prefHeight="18.0" prefWidth="140.0" text="            Label" textAlignment="CENTER" />
         <Label fx:id="labelTime1" layoutX="540.0" layoutY="42.0" prefHeight="18.0" prefWidth="140.0" text="            Label" textAlignment="CENTER" />
-      <AnchorPane fx:id="logoPane" layoutX="3.0" layoutY="2.0" prefHeight="88.0" prefWidth="390.0">
+      <AnchorPane fx:id="logoPane" layoutX="3.0" layoutY="2.0" prefHeight="88.0" prefWidth="406.0">
          <children>
-            <ImageView fitHeight="88.0" fitWidth="390.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="79.0" fitWidth="406.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../assests/play-tech-pvt-ltd-high-resolution-logo-transparent.png" />
                </image>
