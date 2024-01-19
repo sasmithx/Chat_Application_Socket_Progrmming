@@ -179,7 +179,7 @@ public class ClientController implements Initializable {
                             text.setStyle("-fx-font-size: 15px; -fx-fill: white");
                             textFlow.getChildren().add(text);
 
-
+                            
                             Text emojiText = new Text(emoji);
                             emojiText.setStyle("-fx-font-size: 23px; -fx-fill: #FAD22D; -fx-border-width: 10");
                             textFlow1.getChildren().add(emojiText);
