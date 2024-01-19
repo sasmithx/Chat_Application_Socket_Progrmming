@@ -10,6 +10,7 @@ public class ClientInitializer extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/clientForm.fxml"))));
+        stage.setResizable(false);
         stage.show();
     }
 
