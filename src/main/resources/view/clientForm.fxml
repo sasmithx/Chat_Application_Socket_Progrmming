@@ -63,21 +63,35 @@
                     </image></ImageView>
             </children>
         </AnchorPane>
-        <AnchorPane fx:id="logPane" layoutX="157.0" layoutY="265.0" prefHeight="96.0" prefWidth="374.0">
+        <AnchorPane fx:id="logPane" layoutX="155.0" layoutY="211.0" prefHeight="150.0" prefWidth="376.0">
             <children>
-                <TextField fx:id="userTxt" layoutX="9.0" layoutY="1.0" onKeyTyped="#txtValiName" prefHeight="24.0" prefWidth="356.0" style="-fx-background-radius: 10 10 10 10;" />
-            <JFXButton layoutX="125.0" layoutY="55.0" onAction="#loginOnAction" prefHeight="34.0" prefWidth="124.0" style="-fx-background-color: #ff7675; -fx-background-radius: 10;" text="Join" />
+                <TextField fx:id="userTxt" layoutX="9.0" layoutY="62.0" onKeyTyped="#txtValiName" prefHeight="24.0" prefWidth="356.0" style="-fx-background-radius: 10 10 10 10;" />
+            <JFXButton layoutX="125.0" layoutY="101.0" onAction="#loginOnAction" prefHeight="34.0" prefWidth="124.0" style="-fx-background-color: #ff7675; -fx-background-radius: 10;" text="Join" />
+            <Label layoutX="45.0" layoutY="29.0" prefHeight="18.0" prefWidth="286.0" text="Enter Your Username To Join Chat" textFill="WHITE">
+               <font>
+                  <Font name="Mongolian Baiti" size="19.0" />
+               </font>
+            </Label>
             </children>
         </AnchorPane>
-        <AnchorPane fx:id="imgPane" layoutX="250.0" layoutY="70.0">
+        <AnchorPane fx:id="imgPane" layoutX="289.0" layoutY="101.0" prefHeight="100.0" prefWidth="100.0">
             <children>
-                <ImageView fitHeight="192.0" fitWidth="198.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="2.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@../assests/man.png" />
                     </image></ImageView>
             </children>
         </AnchorPane>
-        <Label fx:id="labelTime" layoutX="451.0" layoutY="12.0" prefHeight="17.0" prefWidth="201.0" text="            Label" textAlignment="CENTER" />
-        <Label fx:id="labelTime1" layoutX="462.0" layoutY="37.0" prefHeight="17.0" prefWidth="201.0" text="            Label" textAlignment="CENTER" />
+        <Label fx:id="labelTime" layoutX="525.0" layoutY="13.0" prefHeight="18.0" prefWidth="140.0" text="            Label" textAlignment="CENTER" />
+        <Label fx:id="labelTime1" layoutX="540.0" layoutY="42.0" prefHeight="18.0" prefWidth="140.0" text="            Label" textAlignment="CENTER" />
+      <AnchorPane fx:id="logoPane" layoutX="3.0" layoutY="2.0" prefHeight="88.0" prefWidth="390.0">
+         <children>
+            <ImageView fitHeight="88.0" fitWidth="390.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/play-tech-pvt-ltd-high-resolution-logo-transparent.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
     </children>
 </AnchorPane>

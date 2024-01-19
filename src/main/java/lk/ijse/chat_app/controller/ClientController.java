@@ -48,6 +48,10 @@ public class ClientController implements Initializable {
     public AnchorPane imgPane;
     public Label labelTime;
     public Label labelTime1;
+
+    @FXML
+    private AnchorPane logoPane;
+
     @FXML
     private Label lblName;
 
@@ -78,6 +82,7 @@ public class ClientController implements Initializable {
             lblName.setText(name);
             imgPane.setVisible(false);
             logPane.setVisible(false);
+            logoPane.setVisible(false);
             msgPane.setVisible(true);
         }
     }
