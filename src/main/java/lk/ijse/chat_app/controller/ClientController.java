@@ -421,7 +421,7 @@ public class ClientController implements Initializable {
 
     @FXML
     void sendOnAction(MouseEvent event) throws IOException {
-        if(!sendText.getText().isEmpty()){String msg = lblName.getText();
+        if(!sendText.getText().isEmpty()){String msg = sendText.getText();
             String name = lblName.getText();
             Text text = new Text("\nME : "+msg);
             text.setTextAlignment(TextAlignment.CENTER);
