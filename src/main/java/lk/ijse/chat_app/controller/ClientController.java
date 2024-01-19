@@ -10,6 +10,8 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 
+import java.util.regex.Pattern;
+
 public class ClientController {
     @FXML
     private VBox emojiBox;
@@ -44,6 +46,30 @@ public class ClientController {
     @FXML
     private TextField userTxt;
 
+
+    @FXML
+    void loginOnAction(ActionEvent event) {
+        String name = userTxt.getText();
+        boolean isValidate = validation(name);
+
+        if(isValidate){
+            lblName.setText(name);
+            imgPane.setVisible(false);
+            logPane.setVisible(false);
+            msgPane.setVisible(true);
+        }
+    }
+
+    boolean validation(String name){
+        Pattern idPattern = Pattern.compile("^[A-z\\s]{4,15}$");
+        boolean matches = idPattern.matcher(name).matches();
+        if(matches){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
     @FXML
     void emojiSend(MouseEvent event) {
 
@@ -54,10 +80,7 @@ public class ClientController {
 
     }
 
-    @FXML
-    void loginOnAction(ActionEvent event) {
 
-    }
 
     @FXML
     void sendOnAction(MouseEvent event) {
