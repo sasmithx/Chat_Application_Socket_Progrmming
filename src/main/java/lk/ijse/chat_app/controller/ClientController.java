@@ -190,16 +190,14 @@ public class ClientController implements Initializable {
                             HBox hBox = new HBox();
                             hBox.getChildren().add(textFlow2);
                             hBox.setAlignment(Pos.BASELINE_LEFT);
-//                            vBox1.setStyle("-fx-background-color:  black; -fx-background-radius: 0 10 10 10; -fx-font-style: white;");
 
-                            // imageBox.setAlignment(Pos.BOTTOM_RIGHT);
 
 
                             imageBox.getChildren().add(hBox);
                         });
                     }
                     else {
-//                        txtArea.appendText("\n "+message);
+
                         Platform.runLater(() -> {
                             imageBox.setAlignment(Pos.TOP_LEFT);
                             Text text = new Text("\n " + message);
@@ -207,7 +205,7 @@ public class ClientController implements Initializable {
                             text.setStyle("-fx-fill: white");
                             TextFlow textFlow = new TextFlow();
                             textFlow.getChildren().add(text);
-//                            VBox vBox = new VBox(5);
+
                             HBox hBox = new HBox(10);
                             hBox.getChildren().add(textFlow);
                             textFlow.setStyle("-fx-background-color:  black; -fx-background-radius: 0 10 10 10; -fx-fill: white;");
@@ -216,20 +214,12 @@ public class ClientController implements Initializable {
 
                             hBox.setAlignment(Pos.BASELINE_LEFT);
 
-                            // imageBox.setAlignment(Pos.TOP_LEFT);
-//                            vBox.getChildren().add(hBox);
-////                            vBox.setStyle("-fx-background-color: white");
-//                            vBox.setStyle("-fx-background-color:  #202C33 ; -fx-font-size: 12px; -fx-border-color: #202C33; -fx-border-width: 2px; -fx-border-radius: 2");
-//
-//                            vBox.setMaxHeight(20);
-//                            vBox.setMaxWidth(10);
+
+
                             imageBox.getChildren().add(hBox);
-//                            imageBox.setStyle("-fx-background-color: grey ; -fx-font-size: 12px; -fx-border-color: black; -fx-border-width: 1px; -fx-border-radius: 10");
 
                         });
                     }
-//                msg= br.readLine();
-
                 }
             } catch (IOException e) {
                 e.printStackTrace();
@@ -274,7 +264,7 @@ public class ClientController implements Initializable {
             File inputFile = new File(filePath);
             Image image = new Image(inputFile.toURI().toString());
             ImageView imageView = new ImageView(image);
-//            imageView.setFitHeight(100);
+
             imageView.setFitWidth(200);
             imageView.setPreserveRatio(true);
             imageView.setOnMouseClicked(event -> {
@@ -292,8 +282,7 @@ public class ClientController implements Initializable {
             vBox.setAlignment(Pos.BOTTOM_RIGHT);
 
 
-            // imageBox.setAlignment(Pos.BOTTOM_RIGHT);
-            // imageBox.setAlignment(Pos.BOTTOM_LEFT);
+
             vBox.getChildren().add(textFlow);
             imageBox.getChildren().add(vBox);
 
@@ -388,13 +377,7 @@ public class ClientController implements Initializable {
             vBox.getChildren().add(hbox);
 
         }
-//        for (String unicode : emojiUnicodes) {
-//            Text emojiText = new Text(unicode);
-//            hBox.getChildren().add(emojiText);
-//            hBox.setAlignment(Pos.TOP_RIGHT);
-//        }
 
-//        emojiBox.getChildren().clear(); // Clear any existing content
         emojiBox.getChildren().add(vBox);
         emojiBox.setVisible(true);
     }
@@ -412,10 +395,9 @@ public class ClientController implements Initializable {
         dataOutputStream.writeUTF(lblName.getText());
         dataOutputStream.writeUTF("emj"+unicode);
 
-        //imageBox.setAlignment(Pos.BASELINE_RIGHT);
-        //imageBox.setAlignment(Pos.BOTTOM_LEFT);
+
         vBox.getChildren().add(textFlow);
-        // vBox.setStyle("-fx-background-color:  #005C4B; -fx-background-radius: 10 10 0 10");
+
 
         imageBox.getChildren().add(vBox);
 
