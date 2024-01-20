@@ -42,14 +42,12 @@ public class ServerController implements Runnable{
                         dataOutputStream.flush();
                     }
                 }
-//                dataOutputStream.writeUTF("Sasmith");
+//                dataOutputStream.writeUTF("Sas");
 //                dataOutputStream.flush();
             }
 
         } catch (Exception e) {
             e.printStackTrace();
-        }finally {
-
         }
     }
 }
