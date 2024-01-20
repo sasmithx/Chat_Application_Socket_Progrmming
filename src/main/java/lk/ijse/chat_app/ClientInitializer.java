@@ -12,6 +12,7 @@ public class ClientInitializer extends Application {
         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/clientForm.fxml"))));
         stage.setResizable(false);
         stage.show();
+        //System.out.println("stage check");
     }
 
     public static void main(String[] args) {
