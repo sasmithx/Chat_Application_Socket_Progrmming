@@ -415,7 +415,7 @@ public class ClientController implements Initializable {
         //imageBox.setAlignment(Pos.BASELINE_RIGHT);
         //imageBox.setAlignment(Pos.BOTTOM_LEFT);
         vBox.getChildren().add(textFlow);
-//        vBox.setStyle("-fx-background-color:  #005C4B; -fx-background-radius: 10 10 0 10");
+        // vBox.setStyle("-fx-background-color:  #005C4B; -fx-background-radius: 10 10 0 10");
 
         imageBox.getChildren().add(vBox);
 
