@@ -6,17 +6,17 @@ import java.io.IOException;
 import java.net.Socket;
 import java.util.ArrayList;
 
-public class ServerController implements Runnable{
+public class ClientHandlerController implements Runnable{
     String msg = " ";
     private String name;
     private  DataInputStream dataInputStream;
     private  DataOutputStream dataOutputStream;
     private Socket socket;
-    private ArrayList<ServerController> servers;
+    private ArrayList<ClientHandlerController> clients;
 
-    public ServerController(Socket socket, ArrayList<ServerController> clients) throws IOException {
+    public ClientHandlerController(Socket socket, ArrayList<ClientHandlerController> clients) throws IOException {
         this.socket = socket;
-        this.servers = clients;
+        this.clients = clients;
         this.dataInputStream = new DataInputStream(socket.getInputStream());
         this.dataOutputStream = new DataOutputStream(socket.getOutputStream());
 
@@ -31,7 +31,7 @@ public class ServerController implements Runnable{
                 name =dataInputStream.readUTF();
                 msg = dataInputStream.readUTF();
                 System.out.println(msg);
-                for (ServerController client : servers) {
+                for (ClientHandlerController client : clients) {
                     System.out.println(client.socket.getPort());
                     System.out.println(socket.getPort());
                     System.out.println(client.name);
@@ -42,8 +42,6 @@ public class ServerController implements Runnable{
                         dataOutputStream.flush();
                     }
                 }
-//                dataOutputStream.writeUTF("Sas");
-//                dataOutputStream.flush();
             }
 
         } catch (Exception e) {
