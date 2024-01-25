@@ -26,7 +26,7 @@ public class ClientHandlerController implements Runnable{
     @Override
     public void run() {
         try {
-            while (!msg.equals("stop")) {
+            while (!msg.equals("end")) {
                 name =dataInputStream.readUTF();
                 msg = dataInputStream.readUTF();
                 System.out.println(msg);

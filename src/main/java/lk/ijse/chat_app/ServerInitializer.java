@@ -26,7 +26,7 @@ public class ServerInitializer {
                 clientThread.start();
             }
         } catch (IOException e) {
-            e.printStackTrace();
+           e.printStackTrace();
         }
     }
 }
