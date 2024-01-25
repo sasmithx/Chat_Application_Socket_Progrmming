@@ -23,7 +23,6 @@ public class ClientHandlerController implements Runnable{
         System.out.println(name);
     }
 
-
     @Override
     public void run() {
         try {
