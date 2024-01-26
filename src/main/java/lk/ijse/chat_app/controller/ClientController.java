@@ -225,7 +225,6 @@ public class ClientController implements Initializable {
                 e.printStackTrace();
             }
         }).start();
-
     }
 
     @FXML
@@ -235,7 +234,7 @@ public class ClientController implements Initializable {
     }
 
     public  void emojis() throws IOException {
-       // String emoji = "\uD83D\uDE01"; // Unicode escape sequence for a smiling face emoji
+
         String emoji = " ";
 
         VBox vBox = new VBox(10);

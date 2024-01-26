@@ -11,7 +11,7 @@ public class ServerInitializer {
     private static ArrayList<ClientHandlerController> clients = new ArrayList<>();
     private static Socket socket;
     public static void main(String[] args) {
-        System.out.println("Hello" + clients);
+        //System.out.println("Hello" + clients);
         try {
             ServerSocket serverSocket = new ServerSocket(5003);
             while(true){
