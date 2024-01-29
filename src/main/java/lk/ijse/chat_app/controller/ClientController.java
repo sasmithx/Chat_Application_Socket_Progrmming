@@ -115,7 +115,6 @@ public class ClientController implements Initializable {
                 dataInputStream = new DataInputStream(socket.getInputStream());
                 dataOutputStream = new DataOutputStream(socket.getOutputStream());
 
-//            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
                 String msg = "";
                 while (!msg.equals("stop")){
                     String message = dataInputStream.readUTF();
