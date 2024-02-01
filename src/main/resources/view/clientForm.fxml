@@ -13,7 +13,7 @@
 
 <AnchorPane prefHeight="446.0" prefWidth="687.0" style="-fx-background-color: #202C33;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chat_app.controller.ClientController">
     <children>
-        <ImageView fitHeight="446.0" fitWidth="687.0">
+        <ImageView fitHeight="446.0" fitWidth="694.0">
             <image>
                 <Image url="@../assests/background.jpg" />
             </image>
@@ -85,7 +85,7 @@
                     </image></ImageView>
             </children>
         </AnchorPane>
-        <Label fx:id="labelTime" layoutX="525.0" layoutY="13.0" prefHeight="18.0" prefWidth="140.0" text="            Label" textAlignment="CENTER" />
+        <Label fx:id="labelTime" layoutX="554.0" layoutY="13.0" prefHeight="18.0" prefWidth="140.0" text="            Label" textAlignment="CENTER" />
         <Label fx:id="labelTime1" layoutX="540.0" layoutY="42.0" prefHeight="18.0" prefWidth="140.0" text="            Label" textAlignment="CENTER" />
       <AnchorPane fx:id="logoPane" layoutX="3.0" layoutY="2.0" prefHeight="88.0" prefWidth="406.0">
          <children>
