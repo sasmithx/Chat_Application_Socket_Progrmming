@@ -1,3 +1,4 @@
+![Logo](https://github.com/sasmithx/Chat_Application_Socket_Progrmming/blob/master/src/main/resources/assests/Client-Server-Network-Model.jpg)
 
 # PLAY TECH PVT LTD.
 
@@ -78,9 +79,7 @@ https://github.com/sasmithx/Chat_Application_Socket_Progrmming.git
 
 <img src="https://github.com/sasmithx/Chat_Application_Socket_Progrmming/blob/master/src/main/resources/assests/Screenshots/Screenshot%202024-08-22%20184245.png" width="600px" height="auto">
 
-## Code Overview
-
-**Contributing**
+## Contributing
 
 Contributions are welcome! Please fork this repository and submit a pull request with your changes.
 
