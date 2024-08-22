@@ -89,3 +89,22 @@ Contributions are welcome! Please fork this repository and submit a pull request
 
 This project is licensed under the MIT License - see the [MIT License](LICENSE)  file for details.
 
+## 
+<br>
+
+<div align="center"> 
+<a href="https://github.com/sasmithx" target="_blank"><img src = "https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white"></a>
+<a href="https://git-scm.com/" target="_blank"><img src = "https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=white"></a>
+<a href="https://maven.apache.org/download.cgi" target="_blank"><img src = "https://img.shields.io/badge/Maven-000000?style=for-the-badge&logo=apachemaven&logoColor=white"></a>
+<a href="https://www.jetbrains.com/idea/download/?section=windows" target="_blank"><img src = "https://img.shields.io/badge/intellij-000000?style=for-the-badge&logo=intellijidea&logoColor=white"></a>
+<a href="https://www.asus.com/lk/" target="_blank"><img src = "https://img.shields.io/badge/asus%20laptop-000000?style=for-the-badge&logo=asus&logoColor=white"
+<a href="https://ubuntu.com/" target="_blank"><img src = "https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"
+                                                
+</div>
+
+<br>
+
+<p align="center">
+  &copy; 2024 Sasmith Manawadu
+</p>
+
